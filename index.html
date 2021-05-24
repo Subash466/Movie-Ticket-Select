@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/normalization.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sathiyam Cinema</h1>
+    <div class="selection">
+      <label for="movie-name">Select Movie</label>
+      <select name="movie-name" id="movie-name">
+        <option value=" ">--none--</option>
+        <option value="250">2.0(3D)-₹250</option>
+        <option value="125">LionKing-₹125</option>
+        <option value="175">K.G.F-₹175</option>
+        <option value="150">Valimai-₹150</option>
+        <option value="200">Master-₹200</option>
+      </select>
+    </div>
+    <div class="showcase">
+      <div class="seat"></div>
+      <small>Available</small>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+      <div class="seat filled"></div>
+      <small>Booked</small>
+    </div>
+    <div class="screen-container">
+    <div class="screen"></div>
+    <div class="row"><span>E</span>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row"><span>D</span>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row"><span>C</span>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row"><span>B</span>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row"><span>A</span>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat filled"></div>
+      <div class="seat filled"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div></div>
+    <p class="total">You selected <span id="count">0</span> seats and have to paid <span id="money">0</span> reupees</p>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+</html>

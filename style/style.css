@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --Booked-color: #b82f0c;
+  --selected-color: #1a7907ef;
+  --seat-color:rgb(150, 145, 145);
+  --text-color: rgb(255, 255, 255);
+}
+
+html{
+  font-size: 9px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to right,#062236,#033b4d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--text-color);
+}
+.container{
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.container h1{
+  text-align: center;
+}
+.selection{
+  display: flex;
+  flex-direction: row;
+  justify-content:center ;
+}
+.selection label{
+  font-size: 2.5rem
+}
+.selection select{
+  outline: none;
+  appearance: none;
+  width: 25rem;
+  height: 3.5rem;
+  margin-left: 1rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 10px rgb(59, 59, 59,0.5);
+}
+.showcase{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+  position: relative;
+}
+.showcase small{
+  margin: 1rem 2rem;
+}
+.screen-container{
+  perspective : 1200px;
+}
+.screen{
+  background-color: var(--text-color);
+  width:100%;
+  height: 23rem;
+  transform: rotateX(-55deg);
+  box-shadow: 2px 2px 10px grey;
+  
+}
+.seat{
+  background-color: var(--seat-color);
+  height: 2.5rem;
+  width: 3rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  margin: 1rem 0.5rem;
+}
+.seat.selected{
+  background-color: var(--selected-color);
+}
+.seat.filled{
+  background-color: var(--Booked-color);
+}
+.row .seat:not(.filled):hover{
+  cursor: pointer;
+  transform: scale(1.15);
+}
+.row .seat:nth-last-of-type(3){
+  margin-left: 3rem;
+}
+.row .seat:nth-of-type(3){
+  margin-right: 3rem;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  position: relative;
+}
+.row span{
+  position: absolute;
+  left: -2rem;
+  top: 1rem;
+}
+p.total{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.total span{
+  color: rgb(188, 201, 9);
+}
+@media screen and (max-width:510px) {
+  html{
+    font-size:8px
+  }
+}
+@media screen and (max-width:460px) {
+  html{
+    font-size:7.3px
+  }
+}
+@media screen and (max-width:390px) {
+  html{
+    font-size:6.5px
+  }
+}
